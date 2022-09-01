@@ -20,6 +20,7 @@ int main()
     switch (opc)
     {
         case 1: //Agregar Artículo
+            //en el inicio se debe de poner el num de articulo
             cout<<"Ingrese el nombre del artículo \n"; //Nombre
             cin.ignore();
             getline(cin, nomart); 
@@ -31,16 +32,18 @@ int main()
             cin.ignore ();
             getline (cin,clas);
             cout<<"Ingrese las características del artículo \n"; //Características
-            cin.ignore();
+            //cin.ignore();
             getline (cin,carac);
             cout<<"Ingrese la descripción del Artículo \n"; //Descripción
-            cin.ignore();
+            //cin.ignore();
             getline (cin,des);
             cout<<"Ingresar el género del Artículo \n"; //Género 
-            cin.ignore();
+           // cin.ignore();
             getline (cin,gen);
             cout<<"Ingrese el precio unitario del Artículo \n"; //Precio Unitario 
             cin>>precio;
+            //imprimir el impuetso
+            cout<<"impuesto"<<precio*imp;
             total=precio+(precio*imp);
             cout<<"El precio total del Artículo es: \n"<<total<<endl; //Precio Total 
             return main ();
